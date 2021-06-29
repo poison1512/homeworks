@@ -18,7 +18,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-//public class PudgeLocalise2 extends JPanel implements Externalizable{
 public class PudgeLocalise2 extends JPanel implements Serializable{
 	private Locale localeEN = new Locale("en", "EN");
 	private Locale localeDE = new Locale("de", "DE");
@@ -82,7 +81,7 @@ public class PudgeLocalise2 extends JPanel implements Serializable{
 		panelB.add(saveButton,BorderLayout.LINE_START);
 		panelB.add(loadButton, BorderLayout.LINE_END);
 		
-		saveButton.addActionListener((e)-> out.writeObject(txtLabel1.getText()));
+//		saveButton.addActionListener((e)-> out.writeObject(txtLabel1.getText()));
 
 		window.add(picLabel, BorderLayout.LINE_START);
 		window.add(panel, BorderLayout.CENTER);
